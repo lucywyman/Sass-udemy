@@ -2,7 +2,7 @@ Practical Exercise 1
 ====================
 
 Welcome to the course!  In this exercise we'll walk through compiling
-your first Sass script into css.  You can see there's two files 
+your first Sass script into CSS.  You can see there are two files 
 in this directory, :code:`1.scss` and :code:`_partial.scss`.  
 :code:`1.scss` is our main sass file which we will be compiling into
 CSS, while `_partial.scss` is just that -- a partial Sass script 
