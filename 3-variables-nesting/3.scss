@@ -1,12 +1,18 @@
-$var1: ; // This is where your variable value goes
-$var2: ; // Here too
+$bg-color: ; // This is where your variable value goes
+$text-color: ; 
+$font: ; 
 
-// You also need to nest h2 inside of body
+// You also need to nest h2 and p inside of body
 
 body {
-	background-color: ; // This is where you place the var1
+	background-color: ; // This is where you place the bg-color variable
 }
 
-h2 {
-	font-family: ; // This is where you place var2
+h2,
+p {
+	color: ; // Text color variable
+}
+
+.title {
+	font-family: ; // Font variable
 }

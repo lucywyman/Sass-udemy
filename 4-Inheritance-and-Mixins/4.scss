@@ -1,0 +1,30 @@
+$bg-color: #FADADD;
+$text-color: #444; 
+$font: 'Arial', sans-serif; 
+
+body {
+	background-color: $bg-color;
+
+	h2,
+	p {
+		color: $text-color;
+	}
+}
+
+.title {
+	font-family: $font;
+}
+
+.content {
+	// Extend .title here
+	font-size: 18px;
+}
+
+// Define your border radius mixin here
+
+// And use it in both of these
+.button1 {
+}
+
+.button2 {
+}

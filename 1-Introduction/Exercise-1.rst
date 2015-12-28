@@ -1,13 +1,9 @@
-Practical Exercise 1
-====================
+Compiling your first Sass file
+==============================
 
 Welcome to the course!  In this exercise we'll walk through compiling
-your first Sass script into CSS.  You can see there are two files 
-in this directory, :code:`1.scss` and :code:`_partial.scss`.  
-:code:`1.scss` is our main sass file which we will be compiling into
-CSS, while `_partial.scss` is just that -- a partial Sass script 
-that gets included into :code:`1.scss` without being compiled itself.
-This is for separation of concerns and better organization. 
+your first Sass script into CSS. :code:`1.scss` is our main sass file which we 
+will be compiling into CSS. 
 
 To compile :code:`1.scss` once, run
 
@@ -38,8 +34,8 @@ it!
 You can also watch a Sass script for changes, which is especially
 useful for development. There are several project-specific tools (like
 grunt) which will also do this for you, but Sass itself has the 
-capability to automatically recompile your script everytime you make 
-a chane.
+capability to automatically recompile your script every time you make 
+a change.
 
 .. code-block:: none
 

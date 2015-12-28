@@ -1,28 +1,34 @@
-@import 'partial';
-
-$bodybg: #000;
-$text: #444;
-
+$bg-color: #FADADD;
+$text-color: #444;
+$font: 'Arial', sans-serif;
 
 body {
-	background: $bodybg;
-}
+	background-color: $bg-color;
 
-h1,
-h2,
-h3 {
-	color: $text;
+	h2,
+	p {
+		color: $text-color;
 
-	a {
-		color: rgba($text, .8);
+		a {
+			color: rgba($text-color, .8);
 
-		&:hover{
-			color: rgba($text + #111111, .8);
-			@if $text == #444 {
-				text-decoration: underline;
+			&:hover{
+				color: rgba($text-color + #111111, .8);
+				@if $text-color == #444 {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
+}
+
+.title {
+	font-family: $font;
+}
+
+.content {
+	@extend .title;
+	font-size: 18px;
 }
 
 @mixin border-radius($radius) {
@@ -32,12 +38,22 @@ h3 {
 	border-radius: $radius;
 }
 
-.thing1 {
+.div {
+	width: 30%;
+	height: 100px;
+	display: inline-block;
+	margin: 20px;
+	background: lighten($text-color, 50);
+	text-align: center;
+}
+
+
+.div1 {
+	@extend .div;
 	@include border-radius(10px);
 }
 
-.thing2 {
+.div2 {
+	@extend .div;
 	@include border-radius(5px);
 }
-
-
