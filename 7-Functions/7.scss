@@ -1,6 +1,6 @@
 $bg-color: #FADADD;
-$text-color: #444444;
-$font: 'Arial', sans-serif;
+$text-color: #444444; 
+$font: 'Arial', sans-serif; 
 
 body {
 	background-color: $bg-color;
@@ -9,14 +9,13 @@ body {
 	p {
 		color: $text-color;
 
-		a {
-			color: rgba($text-color, .8);
-
-			&:hover{
-				color: rgba($text-color + #111111, .8);
-				@if $text-color == #444444 {
-					text-decoration: underline;
-				}
+		// Set the anchor element to have .8 opacity using the rgba() function,
+		// both as the regular element and when it's being hovered over.
+		// As an extra challenge, nest the hover inside the anchor styles
+		a:hover {
+			color: $text-color + #111111;
+			@if $text-color == #444444 {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -38,6 +37,7 @@ body {
 	border-radius: $radius;
 }
 
+
 .div {
 	display: inline-block;
 	width: 30%;
@@ -47,7 +47,6 @@ body {
 	text-align: center;
 }
 
-
 .div1 {
 	@extend .div;
 	@include border-radius(10px);
@@ -55,5 +54,5 @@ body {
 
 .div2 {
 	@extend .div;
-	@include border-radius(5px);
+	@include border-radius(10px - 5px);
 }

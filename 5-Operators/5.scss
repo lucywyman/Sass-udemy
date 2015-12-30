@@ -1,6 +1,6 @@
 $bg-color: #FADADD;
-$text-color: #444444;
-$font: 'Arial', sans-serif;
+$text-color: #444444; 
+$font: 'Arial', sans-serif; 
 
 body {
 	background-color: $bg-color;
@@ -9,16 +9,8 @@ body {
 	p {
 		color: $text-color;
 
-		a {
-			color: rgba($text-color, .8);
-
-			&:hover{
-				color: rgba($text-color + #111111, .8);
-				@if $text-color == #444444 {
-					text-decoration: underline;
-				}
-			}
-		}
+		// Nest the anchor tag styles here
+		// Style it such that when you hover, the text is $text-color + #111111
 	}
 }
 
@@ -38,6 +30,7 @@ body {
 	border-radius: $radius;
 }
 
+
 .div {
 	display: inline-block;
 	width: 30%;
@@ -47,7 +40,6 @@ body {
 	text-align: center;
 }
 
-
 .div1 {
 	@extend .div;
 	@include border-radius(10px);
@@ -55,5 +47,6 @@ body {
 
 .div2 {
 	@extend .div;
+	// Change this value to use an operator
 	@include border-radius(5px);
 }
