@@ -1,4 +1,6 @@
-# Sass-udemy
+Sass-udemy
+==========
+
 Practical Exercises for Sass class on Udemy
 
 To install Sass, once you have 
